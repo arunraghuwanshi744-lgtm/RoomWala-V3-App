@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Rooms | RoomWala</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="container py-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2>Available Rooms</h2>
+
+        <span class="badge bg-primary" id="roomCount">
+            0 Rooms
+        </span>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row g-3">
+
+                <div class="col-md-6">
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="searchInput"
+                        placeholder="Search by City...">
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <select class="form-select" id="priceFilter">
+
+                        <option value="all">All Prices</option>
+
+                        <option value="3000">Up to ₹3000</option>
+
+                        <option value="5000">Up to ₹5000</option>
+
+                        <option value="7000">Up to ₹7000</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  <!-- Featured Rooms -->
+
+<div class="mb-4">
+
+    <h3 class="mb-3">
+        ⭐ Featured Rooms
+    </h3>
+
+    <div class="row" id="featuredRoomList">
+
+    </div>
+
+</div>
+  
+    <!-- Room List -->
+
+    <div class="row" id="roomList">
+
+    </div>
+
+    <!-- No Result -->
+
+    <div
+        id="noResult"
+        class="text-center mt-5 d-none">
+
+        <h4>No Rooms Found 😔</h4>
+
+        <p>Try another city or price.</p>
+
+    </div>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="module" src="js/components.js"></script>
+<script type="module" src="js/rooms.js"></script>
+</body>
+</html>

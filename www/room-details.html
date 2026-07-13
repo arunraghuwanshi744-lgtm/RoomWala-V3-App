@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Room Details | RoomWala</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<>
+
+
+<header>
+
+<div class="container">
+
+<h2>🏠 RoomWala</h2>
+
+<div id="navbar"></div>
+
+</div>
+
+</header>
+
+
+
+<section class="room-details" style="padding:40px 0;">
+
+
+<div class="container">
+
+
+<div class="image-wrapper"
+style="text-align:center; margin-bottom:25px;">
+
+
+<img 
+id="roomImage"
+src="assets/images/room1.jpg"
+alt="Room Image"
+style="max-width:100%; max-height:450px; border-radius:8px; object-fit:cover;">
+
+
+</div>
+
+
+
+<div class="details-content">
+
+
+
+<h1 id="roomTitle">
+Loading Room Title...
+</h1>
+
+
+
+<h2 
+id="roomRent"
+style="color:#28a745; margin-bottom:20px;">
+
+Loading Rent...
+
+</h2>
+
+
+
+<p 
+id="roomDescription"
+style="font-size:16px; line-height:1.6;">
+
+Loading description...
+
+</p>
+
+
+
+<div class="meta-info"
+style="background:#f8f9fa; padding:15px; border-radius:6px;">
+
+
+<p>
+
+<strong>📍 Location:</strong>
+
+<span id="roomLocation">
+Loading...
+</span>
+
+</p>
+
+
+
+<p>
+
+<strong>🏷 Category:</strong>
+
+<span id="roomCategory">
+Loading...
+</span>
+
+</p>
+
+
+</div>
+
+
+
+<div class="facilities-section"
+style="margin-top:30px;">
+
+
+<h3>
+Facilities
+</h3>
+
+
+<ul 
+id="roomFacilities">
+
+<li>
+⌛ Loading facilities...
+</li>
+
+
+</ul>
+
+
+</div>
+<!-- Owner Details Section -->
+
+<div class="owner-section"
+style="margin-top:30px; border-top:2px dashed #dee2e6; padding-top:20px;">
+
+
+<h3>
+Owner Details
+</h3>
+
+
+<p>
+
+<strong>Name:</strong>
+
+<span id="ownerName">
+Loading Owner Name...
+</span>
+
+</p>
+
+  
+<p>
+
+<strong>Phone:</strong>
+
+<span id="ownerPhone">
+Loading...
+</span>
+
+</p>
+
+
+<a
+id="callBtn"
+href="#"
+class="btn btn-success">
+
+📞 Call Owner
+
+</a>
+
+<a
+id="whatsappBtn"
+href="#"
+target="_blank"
+class="btn btn-success"
+style="margin-left:10px;">
+
+💬 WhatsApp
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<div id="footer"></div>
+
+
+
+<!-- Components -->
+
+<script type="module" src="js/components.js"></script>
+
+
+
+
+<!-- Room Details Logic -->
+
+  <script>
+console.log("HTML URL:", window.location.href);
+console.log("HTML SEARCH:", window.location.search);
+</script>
+
+<script type="module" src="js/room-details.js"></script>
+</body>
+</html>

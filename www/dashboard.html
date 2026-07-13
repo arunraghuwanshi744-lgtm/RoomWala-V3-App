@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | RoomWala</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="container py-5">
+
+    <h2 class="mb-3">📊 My Dashboard</h2>
+
+    <!-- User Information -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <div id="customerPanel" class="d-none">
+    <div class="alert alert-primary">
+        <h4>👤 Customer Panel</h4>
+        <p>Browse rooms, unlock contacts and manage your favorites.</p>
+    </div>
+</div>
+
+<div id="ownerPanel" class="d-none">
+    <div class="alert alert-success">
+        <h4>🏠 Owner Panel</h4>
+        <p>Manage your rooms, add new listings and upgrade featured rooms.</p>
+    </div>
+</div>
+
+<div id="adminPanel" class="d-none">
+    <div class="alert alert-danger">
+        <h4>👑 Admin Panel</h4>
+        <p>Manage users, rooms, payments and complete platform.</p>
+    </div>
+</div>
+
+            <h3 id="userName">Loading...</h3>
+
+            <p class="mb-1">
+                <strong>Email :</strong>
+                <span id="userEmail">Loading...</span>
+            </p>
+
+            <p class="mb-0">
+                <strong>Role :</strong>
+                <span class="badge bg-primary" id="userRole">Loading...</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card text-center p-4">
+                <h3 id="totalRooms">0</h3>
+<p>Total Rooms</p>
+              
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-center p-4">
+                <h3 id="totalViews">0</h3>
+<p>Total Views</p>
+                
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-center p-4">
+                <h3 id="totalFavorites">0</h3>
+<p>Favorites</p>
+                
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-center p-4">
+                <h3 id="totalRequests">0</h3>
+<p>Contact Requests</p>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+
+        <h3>My Rooms</h3>
+
+        <a href="post-room.html" class="btn btn-primary">
+            + Add Room
+        </a>
+
+    </div>
+
+<div class="card shadow-sm p-4 text-center">
+
+    <h5 class="mb-3">Room Management</h5>
+
+    <p class="text-muted">
+        Manage all your room listings from My Rooms.
+    </p>
+
+<div class="d-flex justify-content-center gap-3 flex-wrap">
+
+    <a href="my-rooms.html" class="btn btn-success">
+        My Rooms
+    </a>
+
+    <a href="post-room.html" class="btn btn-primary">
+        Add New Room
+    </a>
+
+    <a href="profile.html" class="btn btn-outline-dark">
+        👤 Profile
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/components.js"></script>
+
+<!-- Dashboard Logic -->
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
