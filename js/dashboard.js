@@ -170,3 +170,20 @@ async function loadDashboardStats(currentUser) {
     }
 
 }
+import { auth } from "./firebase-config.js";
+import { signOut } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+    logoutBtn.addEventListener("click", async () => {
+        try {
+            await signOut(auth);
+            alert("Logout successful");
+            window.location.replace("splash.html");
+        } catch (error) {
+            console.error("Logout Error:", error);
+            alert("Logout failed");
+        }
+    });
+}
